@@ -143,7 +143,7 @@
 #define CONFIG_POWER_PFUZE300
 #define CONFIG_POWER_PFUZE300_I2C_ADDR	0x08
 #else
-#define CONFIG_DEFAULT_FDT_FILE "hw6ul-lite.dtb"
+#define CONFIG_DEFAULT_FDT_FILE "imx6ul-panzer.dtb"
 #define PHYS_SDRAM_SIZE			SZ_256M
 #define CONFIG_BOOTARGS_CMA_SIZE   "cma=96M "
 #endif

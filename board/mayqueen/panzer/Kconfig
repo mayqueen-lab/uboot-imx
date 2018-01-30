@@ -1,15 +1,15 @@
-if TARGET_COCONUT
+if TARGET_PANZER
 
 config SYS_BOARD
-	default "coconut"
+	default "panzer"
 
 config SYS_VENDOR
-	default "nutsboard"
+	default "mayqueen"
 
 config SYS_SOC
 	default "mx6"
 
 config SYS_CONFIG_NAME
-	default "coconut"
+	default "panzer"
 
 endif

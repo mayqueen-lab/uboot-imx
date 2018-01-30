@@ -494,8 +494,8 @@ config TARGET_PISTACHIO_LITE
 	bool "Support pistachio-lite"
 	select CPU_V7
 
-config TARGET_COCONUT
-	bool "Support coconut"
+config TARGET_PANZER
+	bool "Support panzer"
 	select CPU_V7
 
 config TARGET_WARP
@@ -912,6 +912,7 @@ source "board/kosagi/novena/Kconfig"
 source "board/logicpd/imx27lite/Kconfig"
 source "board/logicpd/imx31_litekit/Kconfig"
 source "board/maxbcm/Kconfig"
+source "board/mayqueen/panzer/Kconfig"
 source "board/mpl/vcma9/Kconfig"
 source "board/olimex/mx23_olinuxino/Kconfig"
 source "board/palmld/Kconfig"
@@ -955,7 +956,6 @@ source "board/vpac270/Kconfig"
 source "board/wandboard/Kconfig"
 source "board/nutsboard/pistachio/Kconfig"
 source "board/nutsboard/pistachio-lite/Kconfig"
-source "board/nutsboard/coconut/Kconfig"
 source "board/warp/Kconfig"
 source "board/woodburn/Kconfig"
 source "board/work-microwave/work_92105/Kconfig"
