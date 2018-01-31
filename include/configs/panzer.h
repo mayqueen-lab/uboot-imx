@@ -149,8 +149,6 @@
 #endif
 
 
-#define CONFIG_VIDEO
-
 /* Command definition */
 #include <config_cmd_default.h>
 
