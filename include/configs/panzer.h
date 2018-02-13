@@ -205,7 +205,7 @@
 	"bootargs=console=ttymxc0,115200 ubi.mtd=3 "  \
 		"root=ubi0:rootfs rootfstype=ubifs "		     \
 		CONFIG_BOOTARGS_CMA_SIZE \
-		"mtdparts=gpmi-nand:4m(boot),16m(kernel),512k(dtb),-(rootfs)\0"\
+		"mtdparts=gpmi-nand:4m(boot),16m(kernel),512k(dtb),-(rootfs) quiet\0"\
 	"bootcmd=nand read ${loadaddr} 0x400000 0x800000;"\
 		"nand read ${fdt_addr} 0x1400000 0x100000;"\
 		"bootz ${loadaddr} - ${fdt_addr}\0"
@@ -227,7 +227,7 @@
 	"mmcautodetect=yes\0" \
 	"mmcargs=setenv bootargs console=${console},${baudrate} " \
 	    CONFIG_BOOTARGS_CMA_SIZE \
-		"root=${mmcroot}\0" \
+		"root=${mmcroot} quiet\0" \
 	"loadbootscript=" \
 		"fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};\0" \
 	"bootscript=echo Running bootscript from mmc ...; " \
