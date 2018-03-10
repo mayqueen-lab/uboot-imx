@@ -113,9 +113,14 @@ struct i2c_pads_info i2c_pad_info1 = {
 };
 #endif
 
+#define TEE_RAM_SIZE	(0x4000000)
 int dram_init(void)
 {
+#ifdef CONFIG_OPTEE_UTEE
+	gd->ram_size = PHYS_SDRAM_SIZE - TEE_RAM_SIZE;
+#else
 	gd->ram_size = PHYS_SDRAM_SIZE;
+#endif
 
 	return 0;
 }
