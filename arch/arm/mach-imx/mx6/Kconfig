@@ -496,6 +496,14 @@ config TARGET_OT1200
 	select SUPPORT_SPL
 	imply CMD_SATA
 
+config TARGET_PANZER
+	select BOARD_LATE_INIT
+	bool "panzer"
+	select MX6UL
+	select DM
+	select DM_THERMAL
+	select SUPPORT_SPL
+
 config TARGET_PICO_IMX6DL
     bool "Support pico-imx6dl"
     select MX6QDL
@@ -661,6 +669,7 @@ source "board/logicpd/imx6/Kconfig"
 source "board/seco/Kconfig"
 source "board/sks-kinkel/sksimx6/Kconfig"
 source "board/solidrun/mx6cuboxi/Kconfig"
+source "board/mayqueen/panzer/Kconfig"
 source "board/technexion/pico-imx6ul/Kconfig"
 source "board/technexion/pico-imx6dl/Kconfig"
 source "board/technexion/picosom-imx6ul/Kconfig"

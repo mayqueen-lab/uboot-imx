@@ -1,0 +1,14 @@
+if TARGET_PANZER
+
+config SYS_BOARD
+	default "panzer"
+
+config SYS_VENDOR
+	default "mayqueen"
+
+config SYS_CONFIG_NAME
+	default "panzer"
+
+config SYS_TEXT_BASE
+	default 0x87800000
+endif
